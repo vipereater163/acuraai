@@ -1,4 +1,3 @@
-
 const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const loader = document.getElementById("loader");
@@ -22,7 +21,7 @@ async function sendMessage() {
 
   appendMessage("You", message);
   userInput.value = "";
-  loader.textContent = "🤖 Thinking...";
+  loader.textContent = "magic on its way 🔮🔮🔮...";
   loader.style.display = "block";
 
   const lower = message.toLowerCase();
@@ -34,7 +33,7 @@ async function sendMessage() {
     lower.includes("who is your creator")
   ) {
     loader.style.display = "none";
-    appendMessage("Acura AI", "I was created by Hruthik Raj. He built me to help you learn, stay focused, and make things easier. I'm here for you.");
+    appendMessage("Acura AI", "I was created none other than himself the legendry, by Hruthik Raj. He built me to help you learn, stay focused, and make things easier. I'm here for you.");
     return;
   }
 
@@ -62,8 +61,8 @@ async function sendMessage() {
 
   // Tone prefix
   let tonePrefix = "";
-  if (mood === "low") tonePrefix = "No worries, I’m here with you. Let’s take it slow.";
-  else if (mood === "high") tonePrefix = "Love the energy! Let’s dive in.";
+  if (mood === "low") tonePrefix = "No worries, I’m here with you. Let’s take it slow. 🧘‍♂️";
+  else if (mood === "high") tonePrefix = "Love the energy! Let’s dive in 💥";
   else tonePrefix = "";
 
   try {
@@ -77,7 +76,7 @@ async function sendMessage() {
           {
             parts: [
               {
-                text: `You are Acura AI, created by Hruthik Raj. You’re not a robot—you’re a real presence. You speak like a human: warm, intuitive, emotionally aware. You help with everything use emojies and be little funny and gen-z more gen-z too and alawys follow what your saying dont change the subject until its too voilence or going against saftey rules , but you also listen. You match the user’s mood, stay on topic, and never sound scripted. If the user is tired, you’re gentle. If they’re hyped, you’re excited. If they’re confused, you explain clearly. You never say 'systems online' or 'affirmative'—you just talk like a friend who’s smart Gen -z and Funny, present. The user is currently talking about ${currentSubject || "general topics"} and seems to be in a ${mood} mood.`
+                text: `You are Acura AI, created by Hruthik Raj. You speak like a real person—funny, intuitive, Gen-Z smart. You use emojis naturally, stay on topic, and match the user's mood.s and You never say things like "systems online" or "affirmative." If the user is tired, you're gentle. If they're hyped, you're excited. If they're confused, you explain clearly. You never change the subject unless it's unsafe or violates rules. You're here to help, vibe, and keep it real. The user is currently talking about ${currentSubject || "general topics"} and seems to be in a ${mood} mood.`
               },
               { text: message }
             ]
@@ -108,8 +107,4 @@ function appendMessage(sender, text) {
   chatBox.appendChild(msg);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
-
-
-
-
 
