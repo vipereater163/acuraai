@@ -3,21 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 🔥 Meta Description -->
+  <meta name="description" content="Acura AI — cinematic intelligence, emotionally tuned, Gen-Z fluent. Built for tactical clarity and legendary replies.">
+
+  <!-- 🎯 Title -->
   <title>Acura AI</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- 🧠 Favicon -->
+  <link rel="icon" href="acura-icon.png" type="image/png" />
+
+  <!-- 🔗 Open Graph (for link previews) -->
+  <meta property="og:title" content="Acura AI" />
+  <meta property="og:description" content="Cinematic intelligence. Gen-Z fluent. Emotionally tuned." />
+  <meta property="og:image" content="https://acuraai.com/assets/preview.png" />
+  <meta property="og:url" content="https://acuraai.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- 💻 Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="acura-header">🧠 Acura AI</div>
+  <div id="app">
+    <header>
+      <img src="acura-icon.png" alt="Acura AI Logo" width="48" height="48" />
+      <h1>Acura AI</h1>
+      <p class="tagline">Cinematic intelligence. Gen-Z fluent. Emotionally tuned.</p>
+    </header>
 
-  <div class="acura-box">
-    <div class="intro-text" id="chat-box">
-      <p>Yo, I’m Acura AI-built to keep it smart, chill, and real. Type anything, I gotcha 💬</p>
-    </div>
-    <input type="text" id="user-input" placeholder="Type your message..." />
-    <button id="send-btn">Send</button>
-    <div id="loader" style="display: none;">⏳ thinking...</div>
+    <main>
+      <div id="chat-window">
+        <!-- Chat UI goes here -->
+      </div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type your mission..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>© 2025 Acura AI. Built by VIPER.</p>
+    </footer>
   </div>
 
+  <!-- 🚀 Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
