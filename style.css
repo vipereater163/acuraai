@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e1bee7, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.acura-header {
+  align-self: flex-start;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.acura-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  width: 700px;
+  max-width: 90%;
+  text-align: left;
+}
+
+.intro-text {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 8px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+#loader {
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+
